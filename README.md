@@ -1,4 +1,4 @@
-Introduction{#mainpage}
+Introduction
 ---
 Unitree Robotics is a energetic start-up company that focuses on the development, production and sales of high-performance quadruped robots. It has been interviewed by BBC and CCTV, and is one of the earliest company to publicly sell quadruped robots.
 
