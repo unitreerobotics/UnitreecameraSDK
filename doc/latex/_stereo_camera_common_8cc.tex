@@ -1,0 +1,89 @@
+\hypertarget{_stereo_camera_common_8cc}{}\section{src/\+Stereo\+Camera\+Common.cc File Reference}
+\label{_stereo_camera_common_8cc}\index{src/\+Stereo\+Camera\+Common.\+cc@{src/\+Stereo\+Camera\+Common.\+cc}}
+
+
+This file is part of Unitree\+Camera\+S\+DK, which implement stereo vision algorithm.  
+
+
+{\ttfamily \#include \char`\"{}Stereo\+Camera\+Common.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/shm.\+h$>$}\newline
+Include dependency graph for Stereo\+Camera\+Common.\+cc\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_stereo_camera_common_8cc__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a45c9c33784774d9db5196228af42ade2}\label{_stereo_camera_common_8cc_a45c9c33784774d9db5196228af42ade2}} 
+typedef enum \hyperlink{_stereo_camera_common_8cc_a883d5937720f572dee2c22374bf7190b}{Image\+Rect} {\bfseries Image\+Rect\+Type}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_stereo_camera_common_8cc_a883d5937720f572dee2c22374bf7190b}{Image\+Rect} \{ {\bfseries R\+E\+C\+T\+\_\+\+F\+I\+S\+H\+E\+YE} = 0, 
+{\bfseries R\+E\+C\+T\+\_\+\+L\+O\+N\+G\+L\+AT}, 
+{\bfseries R\+E\+C\+T\+\_\+\+P\+E\+R\+S\+P\+E\+C\+T\+I\+VE}
+ \}\begin{DoxyCompactList}\small\item\em This enum is used for stereo images rectification. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_aa41028d84c6cc0f12740351985e25da7}\label{_stereo_camera_common_8cc_aa41028d84c6cc0f12740351985e25da7}} 
+double {\bfseries Mat\+Row\+Mul} (cv\+::\+Mat m, double x, double y, double z, int r)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a6939ed8f37b4dfd4bdca76bb95545165}\label{_stereo_camera_common_8cc_a6939ed8f37b4dfd4bdca76bb95545165}} 
+int {\bfseries convert\+Raw\+Fisheye\+Image} (cv\+::\+Mat \&left, cv\+::\+Mat \&right, float da=0.\+0, float db=-\/32.\+0, float dcx=0.\+0, float dcy=0.\+0)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a6ef6fea1313a8a9891d2f1f678a80012}\label{_stereo_camera_common_8cc_a6ef6fea1313a8a9891d2f1f678a80012}} 
+int {\bfseries convert\+Raw\+Fisheye\+Image} (int radius, cv\+::\+Mat \&left, cv\+::\+Mat \&right)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a3ac4c463fd503a9b114180cfc5f193f2}\label{_stereo_camera_common_8cc_a3ac4c463fd503a9b114180cfc5f193f2}} 
+bool {\bfseries init\+Rectify\+Map} (cv\+::\+Mat K, cv\+::\+Mat D, cv\+::\+Mat R, cv\+::\+Mat Knew, double xi0, double xi1, cv\+::\+Size size, int mode, cv\+::\+Mat \&map1, cv\+::\+Mat \&map2)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a883a659a463c067a78194c408f9d320c}\label{_stereo_camera_common_8cc_a883a659a463c067a78194c408f9d320c}} 
+uchar {\bfseries get\+Blue\+Seg\+Val} (float minv, float maxv, float curv)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a0aeb36e5e9d4ef6d0e22167ce996414d}\label{_stereo_camera_common_8cc_a0aeb36e5e9d4ef6d0e22167ce996414d}} 
+uchar {\bfseries get\+Green\+Seg\+Val} (float minv, float maxv, float curv)
+\item 
+\mbox{\Hypertarget{_stereo_camera_common_8cc_aeae18b151dd0f723b04923e956416f8c}\label{_stereo_camera_common_8cc_aeae18b151dd0f723b04923e956416f8c}} 
+uchar {\bfseries get\+Red\+Seg\+Val} (float minv, float maxv, float curv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file is part of Unitree\+Camera\+S\+DK, which implement stereo vision algorithm. 
+
+image capture, image rectification, disparity computation, point cloud generation \begin{DoxyAuthor}{Author}
+Zhang\+Chunyang  create date 2021.\+07.\+31 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c)2019-\/2021, Hangzhou Yushu Technology Stock C\+O.\+L\+TD. All Rights Reserved. 
+\end{DoxyCopyright}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_stereo_camera_common_8cc_a883d5937720f572dee2c22374bf7190b}\label{_stereo_camera_common_8cc_a883d5937720f572dee2c22374bf7190b}} 
+\index{Stereo\+Camera\+Common.\+cc@{Stereo\+Camera\+Common.\+cc}!Image\+Rect@{Image\+Rect}}
+\index{Image\+Rect@{Image\+Rect}!Stereo\+Camera\+Common.\+cc@{Stereo\+Camera\+Common.\+cc}}
+\subsubsection{\texorpdfstring{Image\+Rect}{ImageRect}}
+{\footnotesize\ttfamily enum \hyperlink{_stereo_camera_common_8cc_a883d5937720f572dee2c22374bf7190b}{Image\+Rect}}
+
+
+
+This enum is used for stereo images rectification. 
+
+F\+I\+S\+H\+E\+YE and L\+O\+N\+G\+L\+AT for fisheye camera model, P\+E\+R\+S\+P\+E\+C\+T\+I\+VE for pinhole cameras \begin{DoxyNote}{Note}
+used for differen camera models 
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+make sure camera model is matched. 
+\end{DoxyAttention}

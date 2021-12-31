@@ -1,0 +1,338 @@
+\hypertarget{class_system_log}{}\section{System\+Log Class Reference}
+\label{class_system_log}\index{System\+Log@{System\+Log}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_system_log_aad41c68c3a8192ddb646170349023c99}{System\+Log} (std\+::string log\+Name)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_system_log}{System\+Log} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_a21296bb67489848bad6cfa04280fec85}{set\+Log\+Level} (int level)
+\begin{DoxyCompactList}\small\item\em set system ouput log level \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_ac33b9f16ae96885ff7170d209a6af506}{run\+Time\+Error} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output running error infomation, color\+: red \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_ac9b085c959e3f97d547c997c2fca2613}{run\+Time\+Info} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output running infomation, color\+: green \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_a69d19a4affe470db2b740a1e9a78e6e5}{run\+Time\+Warning} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output running warning infomation, color\+: yellow \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_a08dff4b478ed29a39d584d3b7f21ddfb}{debug\+Time\+Warning} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output debug warning infomation, color\+: cyan \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_ad79238fdcc9a301093d6fa32884d1ae1}{debug\+Time\+Info} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output debug infomation, color\+: white \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_ae1cbe2de51efe22068e2e047396a72dd}{debug\+Time\+Error} (const char $\ast$format,...)
+\begin{DoxyCompactList}\small\item\em output debug error infomation, color\+: magenta \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_a9714a265975472433882962b7449bd45}{save\+Log} (void)
+\begin{DoxyCompactList}\small\item\em save system log to a file, default file name\+: Running.\+txt \end{DoxyCompactList}\item 
+void \hyperlink{class_system_log_af41d346f86242f5be187fe2be354347d}{save\+Log\+To\+File} (std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em save system log to a designated file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_system_log_aad41c68c3a8192ddb646170349023c99}\label{class_system_log_aad41c68c3a8192ddb646170349023c99}} 
+\index{System\+Log@{System\+Log}!System\+Log@{System\+Log}}
+\index{System\+Log@{System\+Log}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{System\+Log()}{SystemLog()}}
+{\footnotesize\ttfamily System\+Log\+::\+System\+Log (\begin{DoxyParamCaption}\item[{std\+::string}]{log\+Name }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{class_system_log}{System\+Log} constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em log\+Name} & the name of special system \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+output information starts with \char`\"{}log\+Name\char`\"{} 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_system_log_ae1cbe2de51efe22068e2e047396a72dd}\label{class_system_log_ae1cbe2de51efe22068e2e047396a72dd}} 
+\index{System\+Log@{System\+Log}!debug\+Time\+Error@{debug\+Time\+Error}}
+\index{debug\+Time\+Error@{debug\+Time\+Error}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{debug\+Time\+Error()}{debugTimeError()}}
+{\footnotesize\ttfamily System\+Log\+::debug\+Time\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output debug error infomation, color\+: magenta 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}D\+E\+B\+U\+G\+\_\+\+E\+R\+R\+OR\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_ad79238fdcc9a301093d6fa32884d1ae1}\label{class_system_log_ad79238fdcc9a301093d6fa32884d1ae1}} 
+\index{System\+Log@{System\+Log}!debug\+Time\+Info@{debug\+Time\+Info}}
+\index{debug\+Time\+Info@{debug\+Time\+Info}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{debug\+Time\+Info()}{debugTimeInfo()}}
+{\footnotesize\ttfamily System\+Log\+::debug\+Time\+Info (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output debug infomation, color\+: white 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}D\+E\+B\+U\+G\+\_\+\+I\+N\+FO\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_a08dff4b478ed29a39d584d3b7f21ddfb}\label{class_system_log_a08dff4b478ed29a39d584d3b7f21ddfb}} 
+\index{System\+Log@{System\+Log}!debug\+Time\+Warning@{debug\+Time\+Warning}}
+\index{debug\+Time\+Warning@{debug\+Time\+Warning}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{debug\+Time\+Warning()}{debugTimeWarning()}}
+{\footnotesize\ttfamily System\+Log\+::debug\+Time\+Warning (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output debug warning infomation, color\+: cyan 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}D\+E\+B\+U\+G\+\_\+\+W\+A\+R\+N\+I\+NG\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_ac33b9f16ae96885ff7170d209a6af506}\label{class_system_log_ac33b9f16ae96885ff7170d209a6af506}} 
+\index{System\+Log@{System\+Log}!run\+Time\+Error@{run\+Time\+Error}}
+\index{run\+Time\+Error@{run\+Time\+Error}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{run\+Time\+Error()}{runTimeError()}}
+{\footnotesize\ttfamily System\+Log\+::run\+Time\+Error (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output running error infomation, color\+: red 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}E\+R\+R\+OR\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_ac9b085c959e3f97d547c997c2fca2613}\label{class_system_log_ac9b085c959e3f97d547c997c2fca2613}} 
+\index{System\+Log@{System\+Log}!run\+Time\+Info@{run\+Time\+Info}}
+\index{run\+Time\+Info@{run\+Time\+Info}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{run\+Time\+Info()}{runTimeInfo()}}
+{\footnotesize\ttfamily System\+Log\+::run\+Time\+Info (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output running infomation, color\+: green 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}I\+N\+FO\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_a69d19a4affe470db2b740a1e9a78e6e5}\label{class_system_log_a69d19a4affe470db2b740a1e9a78e6e5}} 
+\index{System\+Log@{System\+Log}!run\+Time\+Warning@{run\+Time\+Warning}}
+\index{run\+Time\+Warning@{run\+Time\+Warning}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{run\+Time\+Warning()}{runTimeWarning()}}
+{\footnotesize\ttfamily System\+Log\+::run\+Time\+Warning (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+output running warning infomation, color\+: yellow 
+
+output format \mbox{[}log\+Name\mbox{]}\mbox{[}W\+A\+R\+N\+I\+NG\mbox{]} info 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em format} & \\
+\hline
+\mbox{\tt in}  & {\em ...} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+use it like printf() 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_a9714a265975472433882962b7449bd45}\label{class_system_log_a9714a265975472433882962b7449bd45}} 
+\index{System\+Log@{System\+Log}!save\+Log@{save\+Log}}
+\index{save\+Log@{save\+Log}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{save\+Log()}{saveLog()}}
+{\footnotesize\ttfamily System\+Log\+::save\+Log (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+save system log to a file, default file name\+: Running.\+txt 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+not implement at this version 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_af41d346f86242f5be187fe2be354347d}\label{class_system_log_af41d346f86242f5be187fe2be354347d}} 
+\index{System\+Log@{System\+Log}!save\+Log\+To\+File@{save\+Log\+To\+File}}
+\index{save\+Log\+To\+File@{save\+Log\+To\+File}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{save\+Log\+To\+File()}{saveLogToFile()}}
+{\footnotesize\ttfamily System\+Log\+::save\+Log\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+save system log to a designated file 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em file\+Name} & \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+not implement at this version 
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+\mbox{\Hypertarget{class_system_log_a21296bb67489848bad6cfa04280fec85}\label{class_system_log_a21296bb67489848bad6cfa04280fec85}} 
+\index{System\+Log@{System\+Log}!set\+Log\+Level@{set\+Log\+Level}}
+\index{set\+Log\+Level@{set\+Log\+Level}!System\+Log@{System\+Log}}
+\subsubsection{\texorpdfstring{set\+Log\+Level()}{setLogLevel()}}
+{\footnotesize\ttfamily System\+Log\+::set\+Log\+Level (\begin{DoxyParamCaption}\item[{int}]{level }\end{DoxyParamCaption})}
+
+
+
+set system ouput log level 
+
+log level means that different kind of information will be output 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em level} & 1 running information output, 2 running and debug infomation output \\
+\hline
+\mbox{\tt out}  & {\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+
+\end{DoxyNote}
+\begin{DoxyAttention}{Attention}
+
+\begin{DoxyCode}
+\end{DoxyCode}
+ 
+\end{DoxyAttention}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{_system_log_8hpp}{System\+Log.\+hpp}\end{DoxyCompactItemize}

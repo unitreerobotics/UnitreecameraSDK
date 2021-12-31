@@ -1,0 +1,78 @@
+%YAML:1.0
+---
+# unimportant
+LogLevel: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 1. ]
+# unimportant
+Threshold: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 190. ]
+# unimportant. It is recommended not to change
+Algorithm: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [1. ]
+#UDP address for image transfer   192.168.123.IpLastSegment
+IpLastSegment: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 15. ]
+#DeviceNode
+DeviceNode: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 0. ]
+#fov (perspective 60~140) 
+hFov: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 90. ]
+#image size ([1856.,800.] or [928.,400.])
+FrameSize: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [928.,400.] 
+#   [232.,200.] [464.,400.] [928.,800.] 
+RectifyFrameSize: !!opencv-matrix
+   rows: 1
+   cols: 2
+   dt: d
+   data: [464.,400.] 
+#FrameRate
+FrameRate: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 3e+01 ]
+#0 ori img - right  1 ori img - stereo  2 rect img - right  3 rect img - stereo   -1 不传图
+Transmode: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ -1. ] 
+#Transmission rate
+Transrate: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 3e+01 ] 
+# unimportant
+Depthmode: !!opencv-matrix
+   rows: 1
+   cols: 1
+   dt: d
+   data: [ 1. ] 
+Reserved: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
