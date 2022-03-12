@@ -1,18 +1,18 @@
 %YAML:1.0
 ---
-# unimportant
+# [pls dont change] The log level 
 LogLevel: !!opencv-matrix
    rows: 1
    cols: 1
    dt: d
    data: [ 1. ]
-# unimportant
+# [pls dont change] The threshold is applied to detecd point cloud
 Threshold: !!opencv-matrix
    rows: 1
    cols: 1
    dt: d
    data: [ 190. ]
-# unimportant. It is recommended not to change
+#[pls dont change] it's a switch for a algorithm in the process of computing stereo disparity 
 Algorithm: !!opencv-matrix
    rows: 1
    cols: 1
@@ -42,13 +42,13 @@ FrameSize: !!opencv-matrix
    cols: 2
    dt: d
    data: [ 1856., 800. ]
-#
+#rectified frame size
 RectifyFrameSize: !!opencv-matrix
    rows: 1
    cols: 2
    dt: d
    data: [ 928., 800. ]
-#FrameRate
+#FrameRate, it gives the limitation for transmission rate(FPS)
 FrameRate: !!opencv-matrix
    rows: 1
    cols: 1
@@ -60,18 +60,19 @@ Transmode: !!opencv-matrix
    cols: 1
    dt: d
    data: [ 0. ] 
-#Transmission rate
+#Transmission rate(FPS) in the UDP transmitting process. <= FrameRate
 Transrate: !!opencv-matrix
    rows: 1
    cols: 1
    dt: d
    data: [ 3e+01 ] 
-# unimportant
+# [pls dont change]  It's a switch in distortion process of fisheye camera. 1 represents “Longitude and latitude expansion of fisheye camera”;  2 represnets "Perspective distortion correction".
 Depthmode: !!opencv-matrix
    rows: 1
    cols: 1
    dt: d
    data: [ 1. ] 
+ # empty reserved IO
 Reserved: !!opencv-matrix
    rows: 3
    cols: 3
