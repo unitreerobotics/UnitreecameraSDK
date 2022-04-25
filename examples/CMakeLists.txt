@@ -14,6 +14,9 @@ target_link_libraries(example_getCalibParamsFile ${SDKLIBS})
 add_executable(example_putImagetrans ./example_putImagetrans.cc)
 target_link_libraries(example_putImagetrans ${SDKLIBS})
 
+add_executable(example_putImagetrans2 ./example_putImagetrans2.cc)
+target_link_libraries(example_putImagetrans2 ${SDKLIBS})
+
 add_executable(example_getimagetrans ./example_getimagetrans.cc)
 target_link_libraries(example_getimagetrans ${SDKLIBS})
 
