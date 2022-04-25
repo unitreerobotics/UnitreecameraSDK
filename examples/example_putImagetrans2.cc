@@ -59,7 +59,7 @@
     -> # sudo ~/Unitree/camerarosnode/cameraRosnode/kill.sh 
     -> # ps aux | grep camera
     -> # ps aux | grep image
-    -> # sudo kill (PSID)
+    -> # sudo kill (PSID)  (Maybe Head's Nano)
     -> # ps aux | grep image
     (release the video devices. /dev/video0 and /dev/video1 .)
 
@@ -82,7 +82,7 @@
       (rect)     928x800 / 464x400 / 232x200
 
     Transmode:
-      0ÅForigin left (right?)
+      0: Forigin left (right?)
       1: origin stereo
       2: rect left (right?)
       3: rect stereo
@@ -90,7 +90,7 @@
 
     Depthmode:
       1: default
-      2: depthimage, Check the Transfer picture mode.
+      2: depthimage, Check the Transmode.
 
 
   [exGET(example_getimagetrans.cc)]
@@ -195,7 +195,7 @@ int main(int argc, char* argv[])
     cv::Mat left, right, feim;
 
     
-    UnitreeCamera cam("trans_rect_config.yaml");        //Read the settings.
+    UnitreeCamera cam("trans_rect_config.yaml");                //Read the settings.
     if (!cam.isOpened())
     {
         exit(EXIT_FAILURE);
@@ -207,8 +207,8 @@ int main(int argc, char* argv[])
         argstr = argv[1];
     }
 
-    if ( (argstr.compare("origin") == 0) || (argstr == "")) {                              //Original fish Eye image. (Transmode = 0/1, Depthmode = 1)
-                                                                                             //or No argv[1] is same as "origin"
+    if ( (argstr.compare("origin") == 0) || (argstr == "")) {    //Original fish Eye image. (Transmode = 0/1, Depthmode = 1)
+                                                                 //or No argv[1] is same as "origin"
         std::cout << "origin image transfer" << std::endl;
         cam.startCapture(true, false);                      //enable H264 encoding , disable memory sharing.
 
@@ -222,12 +222,12 @@ int main(int argc, char* argv[])
                 continue;
             }
             char key = cv::waitKey(10);
-            if (key == 27) {                                        // press ESC key
+            if (key == 27) {                                // press ESC key
                 break;
             }
         }
-	}
-	else if (argstr.compare("rect") == 0) {                           //Rectify image. (Transmode = 2/3, Depthmode = 1)
+    }
+    else if (argstr.compare("rect") == 0) {                 //Rectify image. (Transmode = 2/3, Depthmode = 1)
 
         std::cout << "rect image transfer" << std::endl;
         cam.startCapture(true, false);
@@ -241,12 +241,12 @@ int main(int argc, char* argv[])
                 continue;
             }
             char key = cv::waitKey(10);
-            if (key == 27) {                                        // press ESC key
+            if (key == 27) {                                // press ESC key
                 break;
             }
         }
-	}
-	else if (argstr.compare("depth") == 0) {                          //Depth image. (Transmode = 4, Depthmode = 2)
+    }
+    else if (argstr.compare("depth") == 0) {                //Depth image. (Transmode = 4, Depthmode = 2)
 
         std::cout << "depth image transfer" << std::endl;
         cam.startCapture(true, false);                      //H264 encoding true/false
@@ -261,7 +261,7 @@ int main(int argc, char* argv[])
                 continue;
             }
             char key = cv::waitKey(10);
-            if (key == 27) {                                        // press ESC key
+            if (key == 27) {                                // press ESC key
                 break;
             }
         }
