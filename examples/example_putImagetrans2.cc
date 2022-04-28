@@ -101,7 +101,10 @@
     exGET can change the received port No. with argv[1] command line.
     port No.: 9201-9205 -> Front, Chin, Left, Right, Abdomen
 
-
+    If you use exGET at other client (PC etc),
+    You should change the gstreamer option (omxh264dec -> avdec_h264 or v4l2h264dec)
+    (avdec_h264 install -> # sudo apt-get install gstreamer1.0-libav)
+    (https://github.com/unitreerobotics/UnitreecameraSDK/blob/ecd2058ba3f033af11c2d2a0306b44cc8d819332/examples/example_getimagetrans.cc#L45)
 
   [Transfer the image]
     For example:
